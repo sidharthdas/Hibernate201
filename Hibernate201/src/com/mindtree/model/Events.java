@@ -18,7 +18,7 @@ public class Events {
 	private int EVENT_ID;
 	private String EVENT_TITLE;
 	private String DESCRIPTION;
-	@ManyToMany
+	@ManyToMany(mappedBy="events")
 	private Collection<Employees> employees = new ArrayList<>();
 	
 	
